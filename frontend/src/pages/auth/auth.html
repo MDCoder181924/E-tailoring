@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - E-TAILORING</title>
+    <link rel="stylesheet" href="./../../css/auth.css">
+</head>
+
+<body>
+    <div class="auth-wrapper">
+        <!-- Background Elements -->
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+
+        <div class="auth-card">
+            <!-- Header / Identity Switcher -->
+            <div class="auth-header">
+                <a href="../../../index.html" class="back-link">← Back to Home</a>
+                <h2 class="brand-title">E-Tailoring</h2>
+                <div class="identity-switch">
+                    <button class="identity-btn active" data-type="customer">Customer</button>
+                    <button class="identity-btn" data-type="tailor">Tailor</button>
+                </div>
+            </div>
+
+            <!-- Forms Container -->
+            <div class="forms-container">
+
+                <!-- CUSTOMER FORMS -->
+                <div id="customer-forms" class="user-section active">
+
+                    <!-- Customer Login -->
+                    <form id="customer-login" class="auth-form active">
+                        <h3>Customer Login</h3>
+                        <p class="subtitle">Welcome back! Please login to your account.</p>
+
+                        <div class="input-group">
+                            <label for="c-login-id">Email or Name</label>
+                            <input type="text" id="c-login-id" placeholder="Enter your email or name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="c-login-pass">Password</label>
+                            <input type="password" id="c-login-pass" placeholder="Enter your password" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Login</button>
+
+                        <div class="form-footer">
+                            <p>Don't have an account? <span class="toggle-mode" data-target="customer-signup">Sign
+                                    Up</span></p>
+                        </div>
+                    </form>
+
+                    <!-- Customer Signup -->
+                    <form id="customer-signup" class="auth-form">
+                        <h3>Customer Sign Up</h3>
+                        <p class="subtitle">Create an account to order custom designs.</p>
+
+                        <div class="input-group">
+                            <label for="c-signup-name">Full Name</label>
+                            <input type="text" id="c-signup-name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="c-signup-email">Email Address</label>
+                            <input type="email" id="c-signup-email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="c-signup-pass">Password</label>
+                            <input type="password" id="c-signup-pass" placeholder="Create a password" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="c-signup-confirm">Confirm Password</label>
+                            <input type="password" id="c-signup-confirm" placeholder="Confirm your password" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Sign Up</button>
+
+                        <div class="form-footer">
+                            <p>Already have an account? <span class="toggle-mode"
+                                    data-target="customer-login">Login</span></p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- TAILOR FORMS -->
+                <div id="tailor-forms" class="user-section">
+
+                    <!-- Tailor Login -->
+                    <form id="tailor-login" class="auth-form active">
+                        <h3>Tailor Login</h3>
+                        <p class="subtitle">Access your dashboard and manage orders.</p>
+
+                        <div class="input-group">
+                            <label for="t-login-id">Email or Name</label>
+                            <input type="text" id="t-login-id" placeholder="Enter your email or name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="t-login-pass">Password</label>
+                            <input type="password" id="t-login-pass" placeholder="Enter your password" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Login</button>
+
+                        <div class="form-footer">
+                            <p>New to E-Tailoring? <span class="toggle-mode" data-target="tailor-signup">Join as
+                                    Tailor</span></p>
+                        </div>
+                    </form>
+
+                    <!-- Tailor Signup -->
+                    <form id="tailor-signup" class="auth-form">
+                        <h3>Tailor Registration</h3>
+                        <p class="subtitle">Join our network of master tailors.</p>
+
+                        <div class="input-group">
+                            <label for="t-signup-name">Full Name</label>
+                            <input type="text" id="t-signup-name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="t-signup-email">Email Address</label>
+                            <input type="email" id="t-signup-email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="t-signup-mobile">Mobile Number</label>
+                            <input type="tel" id="t-signup-mobile" placeholder="Enter your mobile number" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="t-signup-pass">Password</label>
+                            <input type="password" id="t-signup-pass" placeholder="Create a password" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="t-signup-confirm">Confirm Password</label>
+                            <input type="password" id="t-signup-confirm" placeholder="Confirm your password" required>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Register Now</button>
+
+                        <div class="form-footer">
+                            <p>Already registered? <span class="toggle-mode" data-target="tailor-login">Login</span></p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/auth.js"></script>
+</body>
+
+</html>
